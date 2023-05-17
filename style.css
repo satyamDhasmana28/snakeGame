@@ -1,0 +1,43 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+#gameContainer{
+    
+    border: 2px solid;
+    height: 400px;
+    width: 400px; 
+    background-color: black;
+    position: relative;
+}
+
+.food{
+    height: 10px;
+    width: 10px;
+    background-color: aliceblue;
+    border-radius: 2px;
+    position: relative;
+    /* left: 200px;
+    top: 200px; */
+}
+
+.food::before{
+    content: '';
+    background-color: red;
+    height: 5px;
+    width: 5px;
+    position: absolute;
+    border-radius: 5px;
+    left: 2px;   
+    top: 2px;
+}
+
+.snakeBodyPixel{
+    height: 10px;
+    width: 10px;
+    background-color:darkorange;
+    position: absolute;
+    top: 0px;
+    z-index: 2;
+}
+
